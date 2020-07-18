@@ -109,6 +109,7 @@ web_modules/
 
 # dotenv environment variables file
 /server/.env
+/server/.eslintrc.js
 /server/.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
