@@ -1,6 +1,6 @@
 # Travel-Log - A Travel Journal
 
-# Features:
+## Features:
 
 * Title of the place visited
 * Description of the place visited
