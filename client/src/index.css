@@ -8,6 +8,10 @@ body {
   overflow: hidden;
 }
 
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -15,10 +19,78 @@ code {
 
 
 .cm-marker {
-  stroke: #f13a4a;
+  fill: #f13a4a;
+  transform: translate(-50%, -100%);
+}
+
+.cm-add-marker {
+  fill: #f8c102;
   transform: translate(-50%, -100%);
 }
 
 .cm-popup {
   max-width: 300px;
+}
+
+.cm-form-popup {
+  width: 40vw;
+}
+
+.cm-entry-form {
+  padding: 0.5rem;
+}
+
+.cm-entry-form label,
+.cm-entry-form input,
+.cm-entry-form textarea,
+.cm-entry-form button {
+  padding: 0.25rem;
+  display: block;
+  width: 100%;
+}
+
+.cm-entry-form button {
+  border: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8c102;
+}
+
+.cm-error {
+  color: #f00;
+}
+
+.cm-img-holder {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 26px;
+}
+
+#root .mapboxgl-popup-content {
+  background-color: #e2e2e2;
+}
+
+.cm-popup > h3 {
+  margin-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.cm-popup p {
+  margin: 5px 0;
+}
+
+.cm-img-holder img {
+  max-height: 250px;
+  width: 100%;
+  border-radius: 10px;
 }
