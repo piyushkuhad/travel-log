@@ -5,9 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.cm-marker {
+  stroke: #f13a4a;
+  transform: translate(-50%, -100%);
+}
+
+.cm-popup {
+  max-width: 300px;
 }
